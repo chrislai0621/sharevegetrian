@@ -1,0 +1,39 @@
+.btn
+{
+    @include btn();
+}
+
+.bg-cover
+{
+  background-position: center center;
+  background-size: cover;/*充滿全瑩幕*/
+}
+
+.no-gutters
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.zindex--1 {
+    z-index: -1;
+}
+.text-vertical-md-rl
+{
+    @include pad (){
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+	}    
+}
+.text-vertical-rl
+{
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+.position-relative
+{
+    position: relative;
+}
+.font-size-23
+{
+    font-size: 23px;
+}

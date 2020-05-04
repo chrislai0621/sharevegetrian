@@ -1,0 +1,59 @@
+.btn-cart {
+  @include button-size(16px,16px, 24px, 65px, 0);
+  @include button-variant(theme-color('vegetrian-content'),transparent);
+  color:theme-color('vegetrian') !important;
+}
+.img-cart
+{
+    height:315px;
+    width: 100%;
+}
+.text-cart
+{
+    color:theme-color('vegetrian');
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.like-cart
+{
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    z-index: 100;
+    color:theme-color('vegetrian');
+    
+    .like-cart-display
+    {
+        cursor: pointer; 
+        .like-cart-active,.like-cart-checkbox
+        {
+            display: none;        
+        }
+        .like-cart-checkbox:checked
+        {
+            &~.like-cart-active
+            {
+                display: block;
+            }
+            &~.like-cart-hidden
+            {
+                display: none;
+            }
+        }   
+    }
+   
+}
+.title-cart
+{
+   text-align: center;
+    position: absolute;
+    width:36px;
+    height:107px;
+    letter-spacing: 5px;
+    top:0px;
+    left:20px;
+    color:white;
+    padding-right:7px;
+    background-color: theme-color('vegetrian') ;
+    writing-mode: vertical-rl;
+}

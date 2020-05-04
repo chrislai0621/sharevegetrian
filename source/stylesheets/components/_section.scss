@@ -1,0 +1,37 @@
+.section
+{
+    $section-main-height:420px;
+    $section-image-height:460px;
+    background-color: theme-color('vegetrian-content');
+    height:auto;
+     
+    .section-main
+    {
+        position: relative;
+    }
+    .section-image
+    {
+        max-height: $section-image-height;
+        min-height: 250px;
+    }
+    .section-position
+    {
+        max-height: $section-image-height;
+        @include pad()
+        {
+            margin-top:-24px;
+            margin-bottom:-24px;
+        }        
+    }    
+    .section-content
+    {
+        max-height: $section-main-height;
+        line-height: 2.5;
+        box-sizing:border-box;
+    }
+}
+.section-subject
+{
+    font-size: 2.125rem;
+    letter-spacing: 0.5rem;
+}
