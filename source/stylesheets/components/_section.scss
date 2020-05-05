@@ -4,11 +4,7 @@
     $section-image-height:460px;
     background-color: theme-color('vegetrian-content');
     height:auto;
-     
-    .section-main
-    {
-        position: relative;
-    }
+
     .section-image
     {
         max-height: $section-image-height;
@@ -29,9 +25,4 @@
         line-height: 2.5;
         box-sizing:border-box;
     }
-}
-.section-subject
-{
-    font-size: 2.125rem;
-    letter-spacing: 0.5rem;
 }
