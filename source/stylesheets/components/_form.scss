@@ -1,0 +1,15 @@
+.form-control-input
+{
+    height:56px !important;
+    padding-left: 64px !important;
+}
+
+.form-control-input-icon
+{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    font-size:20px;
+    z-index:5;
+    color:theme-color('vegetrian');
+}

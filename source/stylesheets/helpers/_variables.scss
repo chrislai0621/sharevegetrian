@@ -48,6 +48,7 @@ $cyan:    #17a2b8 !default;
 // $vegetrian-color:#83B1C9 !default;
 $vegetrian-color:#478eb3 !default;
 $vegetrian-content-color:#C7D6DB !default;
+$vegetrian-dark-content-color:#A2BBC4!default;
 $vegetrian-bg-color:#C6D2BE !default;
 $vegetrian-bg-hover-color:#EBEBE3!default;
 $colors: () !default;
@@ -95,7 +96,8 @@ $theme-colors: map-merge(
     "vegetrian":  $vegetrian-color,
     "vegetrian-content":$vegetrian-content-color,
     "vegetrian-bg": $vegetrian-bg-color,
-    "vegetrian-bg-hover":$vegetrian-bg-hover-color
+    "vegetrian-bg-hover":$vegetrian-bg-hover-color,
+    "vegetrian-dark-content" :$vegetrian-dark-content-color
   ),
   $theme-colors
 );

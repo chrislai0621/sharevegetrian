@@ -1,5 +1,5 @@
 .btn-cart {
-  @include button-size(16px,16px, 24px, 65px, 0);
+  @include button-size(16px,16px, 24px, 33px, 0);
   @include button-variant(theme-color('vegetrian-content'),transparent);
   color:theme-color('vegetrian') !important;
 }

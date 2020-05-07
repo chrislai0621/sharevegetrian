@@ -1,7 +1,3 @@
-.btn
-{
-    @include btn();
-}
 
 .bg-cover
 {
@@ -17,6 +13,55 @@
 .zindex--1 {
     z-index: -1;
 }
+//button
+.btn-login {
+  @include button-size(16px,16px, 24px, 30px, 0);
+  @include button-variant(theme-color('vegetrian-bg-hover'),transparent);
+  color:theme-color('vegetrian') !important;
+}
+.btn-community {
+    color: theme-color('vegetrian-dark-content');
+    background-color: #fff;
+    border-color: #EAF0ED;  
+}
+.btn-email
+{
+     @include button-size(18px,24px, 16px, 1rem, 0);
+     @include button-variant(theme-color('vegetrian-bg-hover'),transparent);
+     color:theme-color('vegetrian') !important;
+}
+//spacing
+//spacing-margin
+.mt-md-40px
+{
+    @include pad()
+    {
+        margin-top: 40px;
+    }
+}
+.mb-16px
+{
+  margin-bottom: 16px !important;
+}
+.mb-md-40px
+{
+     @include pad()
+    {
+        margin-bottom: 40px;
+    }
+}
+//spacing-padding
+.pl-64px
+{
+    padding-left: 64px;
+}
+
+//text
+.text-vertical-rl
+{
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
 .text-vertical-md-rl
 {
     @include pad (){
@@ -24,11 +69,7 @@
         writing-mode: vertical-rl;
 	}    
 }
-.text-vertical-rl
-{
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}
+
 .font-size-23
 {
     font-size: 23px;
@@ -37,6 +78,10 @@
 {
     font-size: 2.125rem;
  
+}
+.font-size-36
+{
+    font-size: 2.25rem;
 }
 .letter-spacing-1
 {
