@@ -9465,6 +9465,13 @@ a.text-vegetrian-dark-content:hover, a.text-vegetrian-dark-content:focus {
 .pl-64px {
   padding-left: 64px; }
 
+.py-16px {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.pb-16px {
+  padding-bottom: 16px; }
+
 .text-vertical-rl {
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl; }
@@ -9583,9 +9590,50 @@ a.text-vegetrian-dark-content:hover, a.text-vegetrian-dark-content:focus {
     .show > .btn-cart.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5); }
 
+.btn-cart-qty {
+  padding: 12px 18px;
+  font-size: 1rem;
+  line-height: 22px;
+  border-radius: 1;
+  color: #212529;
+  background-color: #fff;
+  border-color: #C7D6DB;
+  color: #478eb3 !important; }
+  .btn-cart-qty:hover {
+    color: #212529;
+    background-color: #ececec;
+    border-color: #a8bfc7; }
+  .btn-cart-qty:focus, .btn-cart-qty.focus {
+    color: #212529;
+    background-color: #ececec;
+    border-color: #a8bfc7;
+    box-shadow: 0 0 0 0.2rem rgba(174, 187, 192, 0.5); }
+  .btn-cart-qty.disabled, .btn-cart-qty:disabled {
+    color: #212529;
+    background-color: #fff;
+    border-color: #C7D6DB; }
+  .btn-cart-qty:not(:disabled):not(.disabled):active, .btn-cart-qty:not(:disabled):not(.disabled).active,
+  .show > .btn-cart-qty.dropdown-toggle {
+    color: #212529;
+    background-color: #e6e6e6;
+    border-color: #a0bac2; }
+    .btn-cart-qty:not(:disabled):not(.disabled):active:focus, .btn-cart-qty:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-cart-qty.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(174, 187, 192, 0.5); }
+
 .img-cart {
   height: 315px;
-  width: 100%; }
+  min-width: 100%; }
+
+.img-cart-list {
+  height: 106px;
+  min-width: 157px;
+  background-position: center center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .img-cart-list {
+      height: 110px;
+      min-width: 110px; } }
 
 .text-cart {
   color: #478eb3;
@@ -9620,6 +9668,14 @@ a.text-vegetrian-dark-content:hover, a.text-vegetrian-dark-content:focus {
   background-color: #478eb3;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl; }
+
+.cart-order {
+  background-color: #fff;
+  color: #478eb3; }
+  @media (min-width: 768px) {
+    .cart-order {
+      background-color: #478eb3;
+      color: white; } }
 
 .form-control-input {
   height: 56px !important;

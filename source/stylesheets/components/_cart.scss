@@ -3,10 +3,26 @@
   @include button-variant(theme-color('vegetrian-content'),transparent);
   color:theme-color('vegetrian') !important;
 }
+.btn-cart-qty {
+  @include button-size(12px,18px, 16px, 22px, 1);
+  @include button-variant($white,theme-color('vegetrian-content'));
+  color:theme-color('vegetrian') !important;
+}
 .img-cart
 {
     height:315px;
-    width: 100%;
+    min-width: 100%;
+}
+.img-cart-list
+{
+   height:106px;
+   min-width: 157px;
+    @include pad(){         
+        height:110px;
+        min-width: 110px;
+    }
+    background-position: center center ;
+    background-size: cover;
 }
 .text-cart
 {
@@ -56,4 +72,14 @@
     padding-right:7px;
     background-color: theme-color('vegetrian') ;
     writing-mode: vertical-rl;
+}
+.cart-order
+{
+    background-color: #fff;
+    color:theme-color('vegetrian') ; 
+    @include pad(){
+        background-color: theme-color('vegetrian') ; 
+        color:white;
+    }
+
 }
