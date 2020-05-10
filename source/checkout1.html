@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="/stylesheets/all.css">
 
-    <title>共享蔬食線上購物-結帳-運送資訊</title>
+    <title>共享蔬食線上購物-結帳-付款資訊</title>
 </head>
 
 <body>
@@ -59,62 +59,87 @@
                 <div class="p-5 bg-vegetrian  text-white">
                     <div class="px-md-2">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="font-size-36 w-50">運送</div>
+                            <div class="font-size-36 w-50">付款</div>
 
                             <div class="steps w-50">
+                                <div class="step-circle completed"><i class="fas fa-check"></i></div>
                                 <div class="step-circle active"></div>
-                                <div class="step-circle"></div>
                                 <div class="step-circle"></div>
                             </div>
                         </div>
                         <!-- form -->
                         <form>
+                            <div class="form-group">
+                                <label for="cardNumber" class="h5">信用卡卡號</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-lg border-right-0" id="cardNumber"
+                                        placeholder="9012-3456-6789-1234">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text bg-white text-vegetrian far fa-credit-card"></span>
+                                    </div>
+                                </div>
+
+                            </div>
                             <div class="form-row">
+                                <div class="form-group col-12 mb-0">
+                                    <label for="address" class="h5">持卡人姓名</label>
+                                </div>
                                 <div class="form-group col-6">
-                                    <label for="lastname" class="h5">姓氏</label>
                                     <input type="text" class="form-control form-control-lg" id="lastname"
                                         placeholder="王">
                                 </div>
                                 <div class="form-group col-6">
-                                    <label for="firstname" class="h5">名字</label>
                                     <input type="text" class="form-control form-control-lg" id="firstname"
                                         placeholder="小明">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="phone" class="h5">電話</label>
-                                <input type="text" class="form-control form-control-lg" id="phone"
-                                    placeholder="0912-345-678">
-                            </div>
-
                             <div class="form-row">
                                 <div class="form-group col-12 mb-0">
-                                    <label for="address" class="h5">地址</label>
+                                    <label for="address" class="h5">有效期限</label>
                                 </div>
                                 <div class="form-group col-6">
-                                    <select id="city" class="form-control form-control-lg">
-                                        <option selected>新北市</option>
-                                        <option>台北市</option>
+                                    <select id="expiredMonth" class="form-control form-control-lg" placeholer="月">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-6">
-                                    <select id="state" class="form-control form-control-lg">
-                                        <option selected>板橋區</option>
-                                        <option>五股區</option>
-                                        <option>三重區</option>
+                                    <select id="expiredYear" class="form-control form-control-lg" placeholer="年">
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
                                     </select>
                                 </div>
+
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-lg" id="address"
-                                    placeholder="幸福路520號">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="backNumber" class="h5">背面末三碼</label>
+                                    <input type="number" class="form-control form-control-lg" id="backNumber"
+                                        placeholder="9012-3456-6789-1234">
+                                </div>
                             </div>
 
                         </form>
-                        <a class="btn btn-login btn-block d-none d-md-block" href="checkout1.html">下一步</a>
+                        <a class="btn btn-login btn-block d-none d-md-block" href="checkout2.html">下一步</a>
                     </div>
                 </div>
-                <a class="btn btn-login btn-block d-block d-md-none" href="checkout1.html">下一步</a>
+                <a class="btn btn-login btn-block d-block d-md-none" href="checkout2.html">下一步</a>
             </div>
             <div class="col-md-4 d-none d-md-block">
                 <div class="d-flex flex-column">
@@ -159,7 +184,8 @@
                             <div class="row d-flex align-items-center mb-3">
                                 <!-- 圖 -->
                                 <div class="col-6">
-                                    <div style="background-image: url( images/product2.jpg);" class="img-cart-list" alt=""></div>
+                                    <div style="background-image: url( images/product2.jpg);" class="img-cart-list"
+                                        alt=""></div>
                                 </div>
                                 <!-- 品名、金額、數量 -->
                                 <div class="col-6">
@@ -172,7 +198,8 @@
                             <div class="row d-flex align-items-center">
                                 <!-- 圖 -->
                                 <div class="col-6">
-                                    <div style="background-image: url( images/product5.jpg);" class="img-cart-list" alt=""></div>
+                                    <div style="background-image: url( images/product5.jpg);" class="img-cart-list"
+                                        alt=""></div>
                                 </div>
                                 <!-- 品名、金額、數量 -->
                                 <div class="col-6">
@@ -186,7 +213,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </section>
 
     <footer>
