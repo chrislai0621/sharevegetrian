@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:title" content="共享蔬食線上購物">
+    <meta property="og:description" content=" 素食的不同新吃法">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="共享蔬食線上購物">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@restaurant" />
+    <meta name="twitter:creator" content="@restaurant" />
+    <meta property="og:url" content="#" />
+    <meta property="og:title" content="共享蔬食線上購物" />
+    <meta property="og:description" content="素食的不同新吃法" />
+    <link rel="icon" href="images/favicon.ico">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+
+    <title>共享蔬食線上購物-結帳-運送資訊</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light text-vegetrian px-0">
+        <div class="container px-5">
+            <button class="navbar-toggler navbar-expand-md d-md-none" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                <h1 class="sr-only">共享蔬食線上購物</h1>
+                <img src="images/logo-md.svg" width="220" height="40" alt="" class="d-none d-md-inline-block">
+                <img src="images/logo.svg" width="114" height="40" alt="" class="d-inline-block d-md-none ">
+            </a>
+
+            <a class="nav-item nav-link bg-transparent order-md-1" href="cart.html"><i
+                    class="fas fa-shopping-cart text-vegetrian"></i>
+            </a>
+            <div class="collapse navbar-collapse navbar-expand-md" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" mr-2 href="product.html">產品介紹</a>
+                    <a class="nav-item nav-link" href="login.html">登入</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Section-->
+    <section class="container mt-md-5 mb-md-5 px-0 px-md-2">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="p-5 bg-vegetrian  text-white">
+                    <div class="px-md-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="font-size-36 w-50">運送</div>
+
+                            <div class="steps w-50">
+                                <div class="step-circle active"></div>
+                                <div class="step-circle"></div>
+                                <div class="step-circle"></div>
+                            </div>
+                        </div>
+                        <!-- form -->
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="lastname" class="h5">姓氏</label>
+                                    <input type="text" class="form-control form-control-lg" id="lastname"
+                                        placeholder="王">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="firstname" class="h5">名字</label>
+                                    <input type="text" class="form-control form-control-lg" id="firstname"
+                                        placeholder="小明">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="h5">電話</label>
+                                <input type="text" class="form-control form-control-lg" id="phone"
+                                    placeholder="0912-345-678">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12 mb-0">
+                                    <label for="address" class="h5">地址</label>
+                                </div>
+                                <div class="form-group col-6">
+                                    <select id="city" class="form-control form-control-lg">
+                                        <option selected>新北市</option>
+                                        <option>台北市</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <select id="state" class="form-control form-control-lg">
+                                        <option selected>板橋區</option>
+                                        <option>五股區</option>
+                                        <option>三重區</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" id="address"
+                                    placeholder="幸福路520號">
+                            </div>
+
+                        </form>
+                        <a class="btn btn-login btn-block d-none d-md-block" href="checkout2.html">下一步</a>
+                    </div>
+                </div>
+                <a class="btn btn-login btn-block d-block d-md-none" href="checkout2.html">下一步</a>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="d-flex flex-column">
+                    <div class="card text-vegetrian">
+                        <h4 class="card-header bg-vegetrian-content text-vegetrian text-center py-16px mb-16px">
+                            訂單摘要
+                        </h4>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mt-3">
+                                <span>小計</span>
+                                <span>NT$1,000</span>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2">
+                                <span>運費</span>
+                                <span>NT$60</span>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <span class="h5 font-weight-bold">總計</span>
+                                <span class="h5 font-weight-bold">NT$1,060</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-vegetrian mt-4">
+                        <h4 class="card-header bg-vegetrian-content text-vegetrian text-center py-16px">
+                            購物清單
+                        </h4>
+                        <div class="card-body">
+                            <div class="row d-flex align-items-center mb-3">
+                                <!-- 圖 -->
+                                <div class="col-6">
+                                    <div style="background-image: url( images/product1.jpg);" class="img-cart-list"
+                                        alt=""></div>
+                                </div>
+                                <!-- 品名、金額、數量 -->
+                                <div class="col-6">
+                                    <div class="d-flex flex-column">
+                                        <div>蔬果沙拉(2)</div>
+                                        <div class="h5">NT$ 500</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center mb-3">
+                                <!-- 圖 -->
+                                <div class="col-6">
+                                    <div style="background-image: url( images/product2.jpg);" class="img-cart-list" alt=""></div>
+                                </div>
+                                <!-- 品名、金額、數量 -->
+                                <div class="col-6">
+                                    <div class="d-flex flex-column">
+                                        <div>堅果香菇沙拉(1)</div>
+                                        <div class="h5">NT$ 300</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <!-- 圖 -->
+                                <div class="col-6">
+                                    <div style="background-image: url( images/product5.jpg);" class="img-cart-list" alt=""></div>
+                                </div>
+                                <!-- 品名、金額、數量 -->
+                                <div class="col-6">
+                                    <div class="d-flex flex-column">
+                                        <div>酪梨吐司沙拉(1)</div>
+                                        <div class="h5">NT$ 200</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <footer>
+        <div class="position-relative bg-vegetrian">
+            <div class="container px-5 px-md-4 ">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-5 py-md-2 my-5  text-center text-md-left">
+                        <span class="h4 text-white">訂閱你我的甜密郵件</span>
+                    </div>
+                    <div class="col-md-5 py-md-2 mt-md-5 mb-5 align-self-center align-self-md-start">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-input" placeholder="請輸入Email"
+                                aria-label="Input email" aria-describedby="Input email">
+                            <i class="fas fa-envelope form-control-input-icon "></i>
+                            <div class="input-group-append">
+                                <button class="btn btn-email id=" btnGroupAddon" type="button">
+                                    <i class="fas fa-arrow-right "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative bg-vegetrian-content pb-5">
+            <div class="container px-5 px-md-4 ">
+                <div class="row d-flex justify-content-center py-5">
+                    <div class="col-md-5 d-flex flex-column">
+                        <a href="index.html"><img src="images/logo.svg" width="162" height="27" alt=""
+                                class="mb-5 mb-md-10"></a>
+                        <p class="text-vegetrian mt-2 mt-md-0 mb-2">02-12345678</p>
+                        <p class="text-vegetrian mb-2">services@vegetrian.com</p>
+                        <p class="text-vegetrian mb-0">新北市幸福路520號</p>
+
+                    </div>
+                    <div class="col-md-5 d-md-flex justify-content-end d-none">
+                        <div class="font-size-23 text-vegetrian text-vertical-rl mt-3 text-nowrap ">吃蔬食的好日子</div>
+                        <div class="font-size-23 text-vegetrian text-vertical-rl align-top text-nowrap">今天是個</div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center  align-items-end">
+                    <div class="col-md-5 align-bottom">
+                        <a href="#"><i class="fab fa-facebook-square h2 text-vegetrian m-0 p-0 mr-1"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square h2 text-vegetrian m-0 p-0 mr-1"></i></a>
+                        <a href="#"><i class="fab fa-line h2 text-vegetrian m-0 p-0 mr-1"></i></a>
+                    </div>
+                    <div class="col-md-5 text-right align-bottom">
+                        <div class="text-vegetrian">© 2020 共享蔬食線上購物* All Rights Reserved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/javascripts/vendor.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script>
+    // (function () {
+    //     "use strict";
+    //     window.addEventListener("load", function () {
+    //         var form = document.getElementById("needs-validation");
+    //         form.addEventListener("submit", function (event) {
+    //             if (form.checkValidity() == false) {
+    //                 event.preventDefault();
+    //                 event.stopPropagation();
+    //             }
+    //             form.classList.add("was-validated");
+    //         }, false);
+    //     }, false);
+    // }());
+    </script>
+</body>
+
+</html>
