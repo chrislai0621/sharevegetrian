@@ -3533,7 +3533,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.75rem 1.25rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -3570,8 +3570,8 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff; }
+  color: #478eb3;
+  background-color: #fff; }
 
 .nav-fill .nav-item {
   -ms-flex: 1 1 auto;
@@ -3615,8 +3615,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.5625rem;
+  padding-bottom: 0.5625rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -3641,8 +3641,8 @@ input[type="button"].btn-block {
 
 .navbar-text {
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem; }
 
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
@@ -9730,5 +9730,16 @@ a.text-vegetrian-dark-content:hover, a.text-vegetrian-dark-content:focus {
     font-size: 1rem;
     background-color: #f8f9fa;
     color: #478eb3; }
+
+.nav-item .nav-receipt {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #478eb3;
+  border: 1px solid #fff; }
+
+.nav-item .nav-receipt.active {
+  background-color: #fff;
+  color: #478eb3; }
 
 /*# sourceMappingURL=all.css.map */

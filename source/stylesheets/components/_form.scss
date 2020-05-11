@@ -58,3 +58,21 @@
     color: theme-color('vegetrian');
   }
 }
+
+.nav-item
+{
+    .nav-receipt
+    {
+        text-align: center;
+        font-size: 1.25rem;
+        color: $white;
+        background-color: theme-color('vegetrian');
+        border: 1px solid $white;
+        
+    }
+    .nav-receipt.active
+    {
+        background-color: $white;
+        color: theme-color('vegetrian');
+    }
+}

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="/stylesheets/all.css">
 
-    <title>共享蔬食線上購物-結帳-付款資訊</title>
+    <title>共享蔬食線上購物-結帳-發票資訊</title>
 </head>
 
 <body>
@@ -59,87 +59,79 @@
                 <div class="p-5 bg-vegetrian  text-white">
                     <div class="px-md-2">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="font-size-36 w-50">付款</div>
+                            <div class="font-size-36 w-50">發票</div>
 
                             <div class="steps w-50">
                                 <div class="step-circle completed"><i class="fas fa-check"></i></div>
+                                <div class="step-circle completed"><i class="fas fa-check"></i></div>
                                 <div class="step-circle active"></div>
-                                <div class="step-circle"></div>
                             </div>
                         </div>
                         <!-- form -->
                         <form>
-                            <div class="form-group">
-                                <label for="cardNumber" class="h5">信用卡卡號</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control form-control-lg border-right-0" id="cardNumber"
-                                        placeholder="9012-3456-6789-1234">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text bg-white text-vegetrian far fa-credit-card"></span>
+                            <!-- <div class="form-row">
+                                <div class="btn-group" role="group"  id="receipt">
+                                    <button id="btnEmailReceipt" type="button" class="btn btn-vegatrian btn-lg w-50 collapsed" data-toggle="collapse"
+                                        href="#emailReceipt">電子發票</button>
+                                    <button id="btnPostReceipt" type="button" class="btn btn-vegatrian btn-lg w-50" data-toggle="collapse"
+                                        href="#postReceipt">郵寄發票</button>
+                                </div>
+                            </div> -->
+                            <ul class="nav nav-pills mb-3 w-100" id="pills-tab" role="tablist">
+                                <li class="nav-item w-50">
+                                    <a class="nav-link nav-receipt active" id="pills-email-receipt-tab" data-toggle="pill" href="#emailReceipt" role="tab"
+                                        aria-controls="email Receipt" aria-selected="true">電子發票</a>
+                                </li>
+                                <li class="nav-item w-50">
+                                    <a class="nav-link nav-receipt" id="pills-post-receipt-tab" data-toggle="pill" href="#postReceipt" role="tab"
+                                        aria-controls="post Receipt" aria-selected="false">郵寄發票</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="emailReceipt" role="tabpanel" aria-labelledby="emailReceipt">
+                                    <div class="form-group">
+                                        <label for="email" class="h5">電子郵件</label>
+                                        <input type="email" class="form-control" placeholder="chris@gmail.com">
                                     </div>
                                 </div>
-
+                                <div class="tab-pane fade" id="postReceipt" role="tabpanel" aria-labelledby="postReceipt">
+                                    <div class="form-row">
+                                        <div class="form-inline col-12 mb-3">
+                                            <label for="address" class="h5">地址</label>
+                                            <div class="custom-control custom-checkbox ml-auto">
+                                                <input type="checkbox" class="custom-control-input" id="ckSameAddress" required>
+                                                <label class="custom-control-label h5" for="ckSameAddress">同運送地址</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <select id="city" class="form-control form-control-lg">
+                                                <option selected>新北市</option>
+                                                <option>台北市</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <select id="state" class="form-control form-control-lg">
+                                                <option selected>板橋區</option>
+                                                <option>五股區</option>
+                                                <option>三重區</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <input type="text" class="form-control form-control-lg" placeholder="幸福路520號">
+                                        </div>
+                                    </div>
+                                </div>
+                           
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 mb-0">
-                                    <label for="address" class="h5">持卡人姓名</label>
-                                </div>
-                                <div class="form-group col-6">
-                                    <input type="text" class="form-control form-control-lg" id="lastname"
-                                        placeholder="王">
-                                </div>
-                                <div class="form-group col-6">
-                                    <input type="text" class="form-control form-control-lg" id="firstname"
-                                        placeholder="小明">
-                                </div>
+                            <div class="form-group">
+                                <label for="email" class="h5">統一編號(選填)</label>
+                                <input type="email" class="form-control" placeholder="12345678">
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 mb-0">
-                                    <label for="address" class="h5">有效期限</label>
-                                </div>
-                                <div class="form-group col-6">
-                                    <select id="expiredMonth" class="form-control form-control-lg" placeholer="月">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                        <option>12</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-6">
-                                    <select id="expiredYear" class="form-control form-control-lg" placeholer="年">
-                                        <option>2020</option>
-                                        <option>2021</option>
-                                        <option>2022</option>
-                                        <option>2023</option>
-                                        <option>2024</option>
-                                        <option>2025</option>
-                                        <option>2026</option>
-                                        <option>2027</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="backNumber" class="h5">背面末三碼</label>
-                                    <input type="number" class="form-control form-control-lg" id="backNumber"
-                                        placeholder="9012-3456-6789-1234">
-                                </div>
-                            </div>
-
                         </form>
-                        <a class="btn btn-login btn-block d-none d-md-block" href="checkout2.html">下一步</a>
+                        <a class="btn btn-login btn-block d-none d-md-block" href="checkout3.html">確認結帳</a>
                     </div>
                 </div>
-                <a class="btn btn-login btn-block d-block d-md-none" href="checkout2.html">下一步</a>
+                <a class="btn btn-login btn-block d-block d-md-none" href="checkout3.html">確認結帳</a>
             </div>
             <div class="col-md-4 d-none d-md-block">
                 <div class="d-flex flex-column">
@@ -272,19 +264,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
     <script>
-    // (function () {
-    //     "use strict";
-    //     window.addEventListener("load", function () {
-    //         var form = document.getElementById("needs-validation");
-    //         form.addEventListener("submit", function (event) {
-    //             if (form.checkValidity() == false) {
-    //                 event.preventDefault();
-    //                 event.stopPropagation();
-    //             }
-    //             form.classList.add("was-validated");
-    //         }, false);
-    //     }, false);
-    // }());
+    (function () {
+        "use strict";
+        // window.addEventListener("load", function () {
+        //     var form = document.getElementById("needs-validation");
+        //     form.addEventListener("submit", function (event) {
+        //         if (form.checkValidity() == false) {
+        //             event.preventDefault();
+        //             event.stopPropagation();
+        //         }
+        //         form.classList.add("was-validated");
+        //     }, false);
+        // }, false);
+        
+        $('#btnEmailReceipt').on('click', function () {
+             $('#postReceipt').collapse('hide');
+        })
+          $('#btnPostReceipt').on('click', function () {
+            $('#emailReceipt').collapse('hide');
+        })
+    }());
     </script>
 </body>
 
