@@ -9730,6 +9730,19 @@ a.text-vegetrian-dark-content:hover, a.text-vegetrian-dark-content:focus {
     font-size: 1rem;
     background-color: #f8f9fa;
     color: #478eb3; }
+  .steps.steps-dark {
+    border-color: #478eb3; }
+    .steps.steps-dark:after {
+      background-color: #478eb3; }
+    .steps.steps-dark .step-circle {
+      border-color: #478eb3; }
+    .steps.steps-dark .step-circle.active {
+      border-color: #478eb3; }
+      .steps.steps-dark .step-circle.active:after {
+        background-color: #478eb3; }
+    .steps.steps-dark .step-circle.completed {
+      background-color: #478eb3;
+      color: #fff; }
 
 .nav-item .nav-receipt {
   text-align: center;

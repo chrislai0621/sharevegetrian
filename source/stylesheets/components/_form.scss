@@ -57,6 +57,25 @@
     background-color: $light;
     color: theme-color('vegetrian');
   }
+  &.steps-dark {
+    border-color: theme-color('vegetrian');
+    &:after {
+      background-color: theme-color('vegetrian');
+    }
+    .step-circle {
+      border-color: theme-color('vegetrian');
+    }
+    .step-circle.active {
+      border-color: theme-color('vegetrian');
+      &:after {
+        background-color: theme-color('vegetrian');
+      }
+    }
+    .step-circle.completed {
+      background-color: theme-color('vegetrian');
+      color: $white;
+    }
+  }
 }
 
 .nav-item
