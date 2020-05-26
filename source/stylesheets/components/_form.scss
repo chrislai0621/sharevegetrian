@@ -15,7 +15,7 @@
 }
 
 .steps {
-  $circle-size: 20px;
+  $circle-size: 25px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -45,8 +45,8 @@
     border-color: $light;
     &:after {
       content: "";
-      height: $circle-size - 6;
-      width: $circle-size - 6;
+      height: $circle-size - 8;
+      width: $circle-size - 8;
       display: block;
       background-color: $light;
       border-radius: $circle-size;

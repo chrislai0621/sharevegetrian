@@ -1,4 +1,16 @@
-
+::-webkit-input-placeholder { /* WebKit browsers */
+font-family: $font-family-sans-serif;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+font-family: $font-family-sans-serif;
+}
+::-moz-placeholder { /* Mozilla Firefox 19 */
+font-family: $font-family-sans-serif;
+}
+:-ms-input-placeholder { /* Internet Explorer 10 */
+color: rgba(255,255,255,0.50) !important;
+font-size: 24px;
+}
 .bg-cover
 {
   background-position: center center;
@@ -30,40 +42,7 @@
      @include button-variant(theme-color('vegetrian-bg-hover'),transparent);
      color:theme-color('vegetrian') !important;
 }
-//spacing
-//spacing-margin
-.mt-md-40px
-{
-    @include pad()
-    {
-        margin-top: 40px;
-    }
-}
-.mb-16px
-{
-  margin-bottom: 16px !important;
-}
-.mb-md-40px
-{
-     @include pad()
-    {
-        margin-bottom: 40px;
-    }
-}
-//spacing-padding
-.pl-64px
-{
-    padding-left: 64px;
-}
-.py-16px
-{
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-.pb-16px
-{
-    padding-bottom: 16px;
-}
+
 //text
 .text-vertical-rl
 {
