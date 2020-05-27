@@ -16,7 +16,6 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
-$gray-blue:#83B1C9 !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -45,8 +44,7 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
-// $vegetrian-color:#83B1C9 !default;
-$vegetrian-color:#478eb3 !default;
+
 $vegetrian-content-color:#C7D6DB !default;
 $vegetrian-dark-content-color:#A2BBC4!default;
 $vegetrian-bg-color:#C6D2BE !default;
@@ -72,7 +70,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       #036091 !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -92,12 +90,7 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark,
-    "vegetrian":  $vegetrian-color,
-    "vegetrian-content":$vegetrian-content-color,
-    "vegetrian-bg": $vegetrian-bg-color,
-    "vegetrian-bg-hover":$vegetrian-bg-hover-color,
-    "vegetrian-dark-content" :$vegetrian-dark-content-color
+    "dark":       $dark
   ),
   $theme-colors
 );
@@ -201,7 +194,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("vegetrian") !default;
+$link-color:                              theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
@@ -735,7 +728,7 @@ $nav-tabs-link-active-bg:           $body-bg !default;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius:           $border-radius !default;
-$nav-pills-link-active-color:       $vegetrian-color !default; //$component-active-color !default;
+$nav-pills-link-active-color:       theme-color("primary") !default; //$component-active-color !default;
 $nav-pills-link-active-bg:          $white !default;//$component-active-bg !default;
 
 $nav-divider-color:                 $gray-200 !default;
@@ -767,12 +760,12 @@ $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-$navbar-light-color:                $gray-blue !default;
-$navbar-light-hover-color:          rgba($gray-blue, .7) !default;
-$navbar-light-active-color:         rgba($gray-blue, .9) !default;
-$navbar-light-disabled-color:       rgba($gray-blue, .3) !default;
+$navbar-light-color:                theme-color("primary")  !default;
+$navbar-light-hover-color:          rgba(theme-color("primary") , .7) !default;
+$navbar-light-active-color:         rgba(theme-color("primary") , .9) !default;
+$navbar-light-disabled-color:       rgba(theme-color("primary") , .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-light-toggler-border-color: rgba($gray-blue, .1) !default;
+$navbar-light-toggler-border-color: rgba(theme-color("primary") , .1) !default;
 
 $navbar-light-brand-color:                $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
@@ -1036,9 +1029,9 @@ $progress-bar-transition:           width .6s ease !default;
 
 // List group
 
-$list-group-color:                  $vegetrian-color !default;
+$list-group-color:                  theme-color("primary") !default;
 $list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($vegetrian-color, .125) !default;
+$list-group-border-color:           rgba(theme-color("primary"), .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
@@ -1046,7 +1039,7 @@ $list-group-item-padding-y:         1rem !default;
 $list-group-item-padding-x:         1.66rem !default;
 
 $list-group-hover-bg:               $vegetrian-content-color !default;
-$list-group-active-color:           $vegetrian-color !default;
+$list-group-active-color:           theme-color("primary") !default;
 $list-group-active-bg:              $vegetrian-content-color !default;
 $list-group-active-border-color:    $list-group-active-bg !default;
 

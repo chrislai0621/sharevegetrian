@@ -16,6 +16,18 @@ font-size: 24px;
   background-position: center center;
   background-size: cover;/*充滿全瑩幕*/
 }
+.bg-vegetrian-content
+{
+ background-color: $vegetrian-content-color !important;
+}
+.border-vegetrian-content
+{
+  border:1px solid  $vegetrian-content-color !important;
+}
+.text-vegetrian-dark-content
+{
+ color:$vegetrian-dark-content-color !important;
+}
 
 .no-gutters
 {
@@ -28,19 +40,19 @@ font-size: 24px;
 //button
 .btn-login {
   @include button-size(16px,16px, 24px, 30px, 0);
-  @include button-variant(theme-color('vegetrian-bg-hover'),transparent);
-  color:theme-color('vegetrian') !important;
+  @include button-variant($vegetrian-bg-hover-color,transparent);
+  color:theme-color('primary') !important;
 }
 .btn-community {
-    color: theme-color('vegetrian-dark-content');
+    color: $vegetrian-dark-content-color;
     background-color: #fff;
     border-color: #EAF0ED;  
 }
 .btn-email
 {
      @include button-size(18px,24px, 16px, 1rem, 0);
-     @include button-variant(theme-color('vegetrian-bg-hover'),transparent);
-     color:theme-color('vegetrian') !important;
+     @include button-variant($vegetrian-bg-hover-color,transparent);
+     color:theme-color('primary') !important;
 }
 
 //text

@@ -28,7 +28,7 @@
       border-left: 1px solid white;
     }
     .rectangle-over {
-      background-color: rgba(theme-color('vegetrian-bg'), .8);
+      background-color: rgba($vegetrian-bg-color, .8);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -37,10 +37,10 @@
 
     // 互動樣式
     &.active, &:hover, &:focus {
-      color: theme-color('vegetrian');
+      color: theme-color('primary');
       font-weight: bolder;
       .rectangle-over {
-        background-color: rgba(theme-color('vegetrian-bg-hover'), .8);
+        background-color: rgba($vegetrian-bg-hover-color, .8);
       }
       .rectangle-image {
         filter: blur(0);

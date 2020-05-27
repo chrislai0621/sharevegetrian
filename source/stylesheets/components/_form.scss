@@ -11,7 +11,7 @@
     left: 20px;
     font-size:20px;
     z-index:5;
-    color:theme-color('vegetrian');
+    color:theme-color('primary');
 }
 
 .steps {
@@ -25,7 +25,7 @@
     border: 1px solid $white;
     border-radius: $circle-size;
     position: relative;
-    background-color: theme-color('vegetrian');
+    background-color: theme-color('primary');
     z-index: 1;
     display: flex;
     align-items: center;
@@ -55,24 +55,24 @@
   .step-circle.completed {
     font-size: 1rem;
     background-color: $light;
-    color: theme-color('vegetrian');
+    color: theme-color('primary');
   }
   &.steps-dark {
-    border-color: theme-color('vegetrian');
+    border-color: theme-color('primary');
     &:after {
-      background-color: theme-color('vegetrian');
+      background-color: theme-color('primary');
     }
     .step-circle {
-      border-color: theme-color('vegetrian');
+      border-color: theme-color('primary');
     }
     .step-circle.active {
-      border-color: theme-color('vegetrian');
+      border-color: theme-color('primary');
       &:after {
-        background-color: theme-color('vegetrian');
+        background-color: theme-color('primary');
       }
     }
     .step-circle.completed {
-      background-color: theme-color('vegetrian');
+      background-color: theme-color('primary');
       color: $white;
     }
   }
@@ -85,13 +85,13 @@
         text-align: center;
         font-size: 1.25rem;
         color: $white;
-        background-color: theme-color('vegetrian');
+        background-color: theme-color('primary');
         border: 1px solid $white;
         
     }
     .nav-receipt.active
     {
         background-color: $white;
-        color: theme-color('vegetrian');
+        color: theme-color('primary');
     }
 }
